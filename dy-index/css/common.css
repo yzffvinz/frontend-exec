@@ -1,0 +1,65 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+.ul-nostyle-horizontal li {
+    float: left;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container  {
+    min-width: 1903px;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 50px;
+}
+
+.navbar {
+    width: 1493px;
+}
+
+.dy-logo {
+    display: inline-block;
+    height: 50px;
+    width: 88px;
+    background: url("../img/logo_v1.png") no-repeat;
+}
+
+.content {
+    height: 2000px;
+}
+
+footer {
+    border: 1px solid;
+}
+
+.current {
+    background-color: rgb(255, 99, 14);
+}
+
+.current a {
+    color: #FFF !important;
+}
