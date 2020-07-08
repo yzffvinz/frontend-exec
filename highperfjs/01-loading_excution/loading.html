@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var x = 0;
+        var start = new Date().getTime();
+        function block(time = 3000) {
+            console.log('block' + ++x);
+            var beigin = new Date().getTime();
+            while (beigin > new Date().getTime() - time) {}
+        }
+    </script>
+</head>
+<body>
+    <div>1</div>
+    <script>
+        block();
+    </script>
+    <div>2</div>
+    <script>
+        block();
+    </script>
+    <div>3</div>
+    <script>
+        block();
+    </script>
+    <div>4</div>
+    <script>
+        var end = new Date().getTime();
+        console.log(end - start);
+    </script>
+</body>
+</html>
